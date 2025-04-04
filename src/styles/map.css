@@ -1,0 +1,58 @@
+/* Map Container - Full-Screen Layout */
+.map-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw; 
+  height: 100vh; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #bdeaea; 
+  padding: 20px; 
+  box-sizing: border-box;
+}
+
+
+.leaflet-container {
+  width: 95%; 
+  height: 85vh; 
+  max-width: 1400px; 
+  border: 3px solid #444; 
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  pointer-events: auto; 
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .leaflet-container {
+    width: 98%;
+    height: 80vh;
+  }
+
+  .search-box-container {
+    top: 8px;
+    flex-direction: column;
+    gap: 6px;
+    padding: 8px;
+  }
+
+  .search-box-container input {
+    width: 180px;
+  }
+
+  .swap-button-container {
+    bottom: 15px;
+  }
+
+  .swap-button {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+}

@@ -1,0 +1,20 @@
+.swap-button {
+  background-color: #ff5733;
+  color: white;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.swap-button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+.swap-button:hover:not(:disabled) {
+  background-color: #c44125;
+}
